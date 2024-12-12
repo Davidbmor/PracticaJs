@@ -1,11 +1,7 @@
-// Importar módulos necesarios
 const express = require('express');
 const cors = require('cors');
-
 const app = express();
 const PORT = 3000;
-
-// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -24,7 +20,6 @@ app.post('/game-state', (req, res) => {
     if (!state || !Array.isArray(state)) {
         return res.status(400).json({ message: 'Formato de datos inválido.' });
     }
-
     gameState = state;
     res.json({ message: 'Estado del juego guardado correctamente.' });
 });
