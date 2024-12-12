@@ -1,0 +1,55 @@
+.contenedor {
+    width: 400px;
+    height: 300px;
+    border: 2px dashed #ccc;
+    position: relative;
+}
+
+.contenedores-cartas{
+    display: flex;
+}
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    cursor: move;
+}
+
+.container-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    width: 180px;
+    height: 250px;
+    margin: 2rem;
+    display: none;
+    border: 1px solid black;
+}
+
+.container-t>div {
+    width: 100%;
+    text-align: center;
+}
+
+.container-t>div:first-child {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.container-t>div:nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.container-t>div:last-child {
+    align-self: flex-end;
+    text-align: right;
+}
